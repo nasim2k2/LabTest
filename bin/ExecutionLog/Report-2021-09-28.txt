@@ -1,0 +1,21 @@
+Sep 28,2021 15:51:46 [info]  Mobile exists
+Sep 28,2021 15:51:47 [info]  clicked on mobile link
+Sep 28,2021 15:51:47 [info]  Add to cart button is displaying
+Sep 28,2021 15:51:57 [info]  Product is added into cart
+Sep 28,2021 15:52:40 [info]  Mobile exists
+Sep 28,2021 15:52:41 [info]  clicked on mobile link
+Sep 28,2021 15:52:42 [info]  Add to cart button is displaying
+Sep 28,2021 15:52:52 [info]  Product is added into cart
+Sep 28,2021 15:53:48 [info]  Mobile exists
+Sep 28,2021 15:53:49 [info]  clicked on mobile link
+Sep 28,2021 15:53:49 [info]  Add to cart button is displaying
+Sep 28,2021 15:57:52 [info]  Mobile exists
+Sep 28,2021 15:57:53 [info]  clicked on mobile link
+Sep 28,2021 15:57:53 [info]  Add to cart button is displaying
+Sep 28,2021 16:38:08 [info]  Mobile exists
+Sep 28,2021 16:38:09 [info]  clicked on mobile link
+Sep 28,2021 16:38:10 [info]  Add to cart button is displaying
+Sep 28,2021 16:38:20 [info]  Product is added into cart
+Sep 28,2021 16:38:46 [info]  Mobile exists
+Sep 28,2021 16:38:47 [info]  clicked on mobile link
+Sep 28,2021 16:38:47 [info]  Add to cart button is displaying

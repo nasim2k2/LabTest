@@ -1,0 +1,502 @@
+<html>
+<head>
+<title>TestNG:  Admin Alert Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Admin Alert Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>37/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Jan 13 16:12:02 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>1367 seconds (1367675 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForReadOperation()'><b>testCreateAnAlertFileOperationOffice365ForReadOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Read' Operation on File Operation on Office 365 when Integration is set as 'arexdev'  and displayed on the alert page</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger btn-sm&quot;&gt;...&lt;/button&gt; is not clickable at point (1218, 552). Other element would receive the click: &lt;div data-id=&quot;960c89bb-d4cc-46db-be5d-c34be370179a&quot; class=&quot;k-pager-wrap k-floatwrap telerik-blazor k-widget k-grid-pager&quot; data-role=&quot;pager&quot; role=&quot;navigation&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN-IAU3NU9P049&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a8ffed0a124662cfbb548c6cb5d86b9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utility.DriverPage.clickOn(DriverPage.java:155)
+	at pages.Admin_AlertsPage.deleteExistingAlert(Admin_AlertsPage.java:203)
+	at tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForReadOperation(AdminAlertTest.java:760)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace965121190", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace965121190'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger btn-sm&quot;&gt;...&lt;/button&gt; is not clickable at point (1218, 552). Other element would receive the click: &lt;div data-id=&quot;960c89bb-d4cc-46db-be5d-c34be370179a&quot; class=&quot;k-pager-wrap k-floatwrap telerik-blazor k-widget k-grid-pager&quot; data-role=&quot;pager&quot; role=&quot;navigation&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN-IAU3NU9P049&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a8ffed0a124662cfbb548c6cb5d86b9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utility.DriverPage.clickOn(DriverPage.java:155)
+	at pages.Admin_AlertsPage.deleteExistingAlert(Admin_AlertsPage.java:203)
+	at tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForReadOperation(AdminAlertTest.java:760)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>31</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForUploadedOperation()'><b>testCreateAnAlertFileOperationOffice365ForUploadedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Uploaded' Operation on File Operation on Office 365 when Integration is set as 'arexdev'  and displayed on the alert page</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger btn-sm&quot;&gt;...&lt;/button&gt; is not clickable at point (1218, 552). Other element would receive the click: &lt;div data-id=&quot;960c89bb-d4cc-46db-be5d-c34be370179a&quot; class=&quot;k-pager-wrap k-floatwrap telerik-blazor k-widget k-grid-pager&quot; data-role=&quot;pager&quot; role=&quot;navigation&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN-IAU3NU9P049&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a8ffed0a124662cfbb548c6cb5d86b9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utility.DriverPage.clickOn(DriverPage.java:155)
+	at pages.Admin_AlertsPage.deleteExistingAlert(Admin_AlertsPage.java:203)
+	at tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForUploadedOperation(AdminAlertTest.java:608)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1001100746", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1001100746'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger btn-sm&quot;&gt;...&lt;/button&gt; is not clickable at point (1218, 552). Other element would receive the click: &lt;div data-id=&quot;960c89bb-d4cc-46db-be5d-c34be370179a&quot; class=&quot;k-pager-wrap k-floatwrap telerik-blazor k-widget k-grid-pager&quot; data-role=&quot;pager&quot; role=&quot;navigation&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=97.0.4692.71)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN-IAU3NU9P049&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a8ffed0a124662cfbb548c6cb5d86b9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utility.DriverPage.clickOn(DriverPage.java:155)
+	at pages.Admin_AlertsPage.deleteExistingAlert(Admin_AlertsPage.java:203)
+	at tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForUploadedOperation(AdminAlertTest.java:608)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>32</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testActivityLessthanXhoursCriticalAlertCreated()'><b>testActivityLessthanXhoursCriticalAlertCreated</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page when severity as 'Critical'</td>
+<td><div><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN-IAU3NU9P049&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a8ffed0a124662cfbb548c6cb5d86b9
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utility.DriverPage.clickOn(DriverPage.java:155)
+	at pages.Admin_AlertsPage.deleteExistingAlert(Admin_AlertsPage.java:203)
+	at tests.AdminAlertTest.testActivityLessthanXhoursCriticalAlertCreated(AdminAlertTest.java:166)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace778484786", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace778484786'><pre>org.openqa.selenium.StaleElementReferenceException: stale element reference: element is not attached to the page document
+  (Session info: chrome=97.0.4692.71)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;WIN-IAU3NU9P049&apos;, ip: &apos;192.168.0.5&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 97.0.4692.71, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\User\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:56907}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5a8ffed0a124662cfbb548c6cb5d86b9
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at utility.DriverPage.clickOn(DriverPage.java:155)
+	at pages.Admin_AlertsPage.deleteExistingAlert(Admin_AlertsPage.java:203)
+	at tests.AdminAlertTest.testActivityLessthanXhoursCriticalAlertCreated(AdminAlertTest.java:166)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForCreatedOperation()'><b>testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForCreatedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Created' Operation on File Operation on integrators when Integration is set as 'netappqa'  and displayed on the alert page</td>
+<td></td>
+<td>38</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForModifiedOperation()'><b>testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForModifiedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Modified' Operation on File Operation on integrators when Integration is set as 'netappqa'  and displayed on the alert page</td>
+<td></td>
+<td>36</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentasCreatedOperationAlert()'><b>testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentasCreatedOperationAlert</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully for 'Created' Operation on File Operation on integrators when Integration is set as 'window_file_server'</td>
+<td></td>
+<td>35</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertByNameTypeAndIntegration()'><b>testUserIsAbleToFilterAlertByNameTypeAndIntegration</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alerts are getting displayed based on the below selected criteria on filter pop up.1. Name: Contains - Sample,2. Type: File operation on integrators.3. Integration: Contains - netapp</td>
+<td></td>
+<td>70</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertWithNameEquals()'><b>testUserIsAbleToFilterAlertWithNameEquals</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only those alerts are getting displayed whose name equals to search keyword.Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>29</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForDeletedOperation()'><b>testCreateAnAlertFileOperationOffice365ForDeletedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Deleted' Operation on File Operation on Office 365 when Integration is set as 'arexdev'  and displayed on the alert page</td>
+<td></td>
+<td>36</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForReadOperation()'><b>testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForReadOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Read' Operation on File Operation on integrators when Integration is set as 'netappqa'  and displayed on the alert page</td>
+<td></td>
+<td>36</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToGetResetDefaultValueWhenClickedOnClearButtonOnFilterPoUp()'><b>testUserIsAbleToGetResetDefaultValueWhenClickedOnClearButtonOnFilterPoUp</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify all fields present on filter pop up get reset or goes to default state if click on 'Clear' button</td>
+<td></td>
+<td>50</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertBySeverityAsInfo()'><b>testUserIsAbleToFilterAlertBySeverityAsInfo</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only 'Info' alerts are getting displayed on alerts page if select Severity as 'Info'</td>
+<td></td>
+<td>25</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForDeletedOperation()'><b>testCreateAnAlertOfNetAppQaFileOperationOnIntegratorsForDeletedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for Deleted Operation on File Operation on integrators when Integration is set as 'netappqa'  and displayed on the alert page</td>
+<td></td>
+<td>37</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForModifiedOperation()'><b>testCreateAnAlertFileOperationOffice365ForModifiedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Modified' Operation on File Operation on Office 365 when Integration is set as 'arexdev'  and displayed on the alert page</td>
+<td></td>
+<td>37</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertFileOperationOffice365ForRenamedOperation()'><b>testCreateAnAlertFileOperationOffice365ForRenamedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify  alert is created successfully for 'Renamed' Operation on File Operation on Office 365 when Integration is set as 'arexdev'  and displayed on the alert page</td>
+<td></td>
+<td>37</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertBySeverityAsWarning()'><b>testUserIsAbleToFilterAlertBySeverityAsWarning</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only 'Warning' alerts are getting displayed on alerts page if select Severity as 'Warning'</td>
+<td></td>
+<td>25</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testNoItemsIsDisplayedWhenUserApplyFilterWithUnmatchedKeywordAndContainsConditionForIntegratorsFields()'><b>testNoItemsIsDisplayedWhenUserApplyFilterWithUnmatchedKeywordAndContainsConditionForIntegratorsFields</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify no  alerts are getting displayed if 'Integration' contains  Value is not having any matched item  .Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>28</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnAgentsForRenamedOperation()'><b>testCreateAnAlertOfFileOperationOnAgentsForRenamedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page Operation as Renamed.</td>
+<td></td>
+<td>33</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testNoItemsIsDisplayedWhenUserApplyFilterWithnetaapKeywordAndStarWithConditionForIntegratorsFields()'><b>testNoItemsIsDisplayedWhenUserApplyFilterWithnetaapKeywordAndStarWithConditionForIntegratorsFields</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only  those alerts are getting displayed whose 'Integration' start with 'QA'. Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>29</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testActivityLessthanXhoursInfoAlertCreated()'><b>testActivityLessthanXhoursInfoAlertCreated</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page when severity as 'Info'</td>
+<td></td>
+<td>30</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertByIntegrationNameActivityLessThanXHours()'><b>testUserIsAbleToFilterAlertByIntegrationNameActivityLessThanXHours</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only 'Activity Less Than X hours' alerts are getting displayed on alerts page if select type as 'Activity Less Than X hours'</td>
+<td></td>
+<td>25</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnAgentsForReadOperation()'><b>testCreateAnAlertOfFileOperationOnAgentsForReadOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page Operation as Read.</td>
+<td></td>
+<td>31</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertWithNameContains()'><b>testUserIsAbleToFilterAlertWithNameContains</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only those alerts are getting displayed which contains 'QA' in the 'Name'. Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>29</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertByIntegrationNameFileOperationOnIntegrators()'><b>testUserIsAbleToFilterAlertByIntegrationNameFileOperationOnIntegrators</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only 'File Operation on Integrators' alerts are getting displayed on alerts page if select type as 'File Operation Integrators'</td>
+<td></td>
+<td>25</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testActivityLessthanXhoursWarningAlertCreated()'><b>testActivityLessthanXhoursWarningAlertCreated</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page when severity as 'Warning'</td>
+<td></td>
+<td>28</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentasModifiedOperationAlert()'><b>testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentasModifiedOperationAlert</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully for 'Modified' Operation on File Operation on integrators when Integration is set as 'window_file_server'</td>
+<td></td>
+<td>35</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnAgentsForModifiedOperation()'><b>testCreateAnAlertOfFileOperationOnAgentsForModifiedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page Operation as Modified.</td>
+<td></td>
+<td>32</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnAgentsForDeleteOperation()'><b>testCreateAnAlertOfFileOperationOnAgentsForDeleteOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page when Operation as Deleted</td>
+<td></td>
+<td>33</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertWithNameStartWith()'><b>testUserIsAbleToFilterAlertWithNameStartWith</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only those alerts are getting displayed whose name Start With to search keyword.Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>29</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertBySeverityAsCritical()'><b>testUserIsAbleToFilterAlertBySeverityAsCritical</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only 'Critical' alerts are getting displayed on alerts page if select Severity as 'Critical'</td>
+<td></td>
+<td>25</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertContainsQAInIntegrators()'><b>testUserIsAbleToFilterAlertContainsQAInIntegrators</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only  those alerts are getting displayed whose 'Integration' contains 'QA'.Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>29</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertByNameTypeIntegrationAndSeverity()'><b>testUserIsAbleToFilterAlertByNameTypeIntegrationAndSeverity</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alerts are getting displayed based on the below selected criteria on filter pop up.1. Name: Contains - Sample2. Type: File operation on integrators.3. Integration: Contains - QA-test 4. Severity: Info</td>
+<td></td>
+<td>44</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertByNameWithContainAndIntegrationAsActivityLessThanXHours()'><b>testUserIsAbleToFilterAlertByNameWithContainAndIntegrationAsActivityLessThanXHours</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alerts are getting displayed if Name as Contains -<xyz> and Type as Activity Less Than X Hours are selected on filter pop up.</td>
+<td></td>
+<td>32</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertByIntegrationNameFileOperationOnAgents()'><b>testUserIsAbleToFilterAlertByIntegrationNameFileOperationOnAgents</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only 'File Operation on Agents' alerts are getting displayed on alerts page if select type as 'File Operation Agents'</td>
+<td></td>
+<td>25</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentDeletedOperationAlert()'><b>testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentDeletedOperationAlert</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully for 'Deleted' Operation on File Operation on integrators when Integration is set as 'window_file_server' </td>
+<td></td>
+<td>35</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnAgentsForCreatedOperation()'><b>testCreateAnAlertOfFileOperationOnAgentsForCreatedOperation</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully and displayed on the alert page Operation as Created.</td>
+<td></td>
+<td>33</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToEditExistingAlert()'><b>testUserIsAbleToEditExistingAlert</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify user is able to edit already existing alert</td>
+<td></td>
+<td>33</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentasReadOperationAlert()'><b>testCreateAnAlertOfFileOperationOnIntegratorWindowServerAgentasReadOperationAlert</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify alert is created successfully for 'Read' Operation on File Operation on integrators when Integration is set as 'window_file_server'</td>
+<td></td>
+<td>35</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testNoItemsIsDisplayedWhenUserApplyFilterWithQAKeywordAndEqualsConditionForIntegratorsFields()'><b>testNoItemsIsDisplayedWhenUserApplyFilterWithQAKeywordAndEqualsConditionForIntegratorsFields</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify no  alerts are getting displayed if 'Integration' equals to 'QA' is selected on filter pop up. Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>28</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+<tr>
+<td title='tests.AdminAlertTest.testUserIsAbleToFilterAlertEqualsToNetAppQAInIntegrators()'><b>testUserIsAbleToFilterAlertEqualsToNetAppQAInIntegrators</b><br>Test class: tests.AdminAlertTest<br>Test method: Verify only  those alerts are getting displayed whose 'Integration' equals to "netappqa". Also, verify red bubble number displays as 1 on filter button present at 'Alerts' page.</td>
+<td></td>
+<td>29</td>
+<td>tests.AdminAlertTest@3738449f</td></tr>
+</table><p>
+</body>
+</html>
